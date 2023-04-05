@@ -40,6 +40,11 @@ public class FixedCapacityStack<T> implements Iterable<T> {
         return size == 0;
     }
 
+    public boolean isFull()
+    {
+        return size == array.length;
+    }
+
     public int size() {
         return size;
     }
