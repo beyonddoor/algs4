@@ -16,13 +16,15 @@ allprojects {
     repositories {
         jcenter()
     }
+
+
     apply plugin: 'java'
     apply plugin: 'eclipse'
     apply plugin: 'idea'
     apply plugin: 'maven-publish'
 
-    sourceCompatibility = 1.7
-    targetCompatibility = 1.7
+    sourceCompatibility = 16
+    targetCompatibility = 16
 }
 
 task sourcesJar(type: Jar, dependsOn:classes) {
@@ -79,5 +81,9 @@ bintray {
 }
 
 wrapper {
-  gradleVersion = '2.6'
+  gradleVersion = '7.2'
+}
+
+dependencies {
+    implementation files('libs/stdlib.jar')
 }

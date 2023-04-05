@@ -25,7 +25,9 @@
 
 package edu.princeton.cs.algs4;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  *  The {@code BinarySearch} class provides a static method for binary
@@ -82,6 +84,27 @@ public class BinarySearch {
     }
 
     /**
+     * 1.1.28 Remove duplicates. Modify the test client in BinarySearch to remove any duplicate keys in the whitelist after the sort.
+     */
+    static int[] removeDuplicates(int[] array) {
+        return array;
+//        List<Integer> list = new ArrayList<Integer>();
+//        int lastIndex = -1;
+//        for (int i=0; i<array.length; ) {
+//            if(lastIndex<0 || array[i]!= array[lastIndex])
+//            {
+//                lastIndex = i;
+//                list.add(array[i]);
+//            }
+//
+//            i = lastIndex + 1;
+//        }
+//
+//        int[] res = new int[0];
+//        return list.toArray(res);
+    }
+
+    /**
      * Reads in a sequence of integers from the allowlist file, specified as
      * a command-line argument; reads in integers from standard input;
      * prints to standard output those integers that do <em>not</em> appear in the file.
@@ -96,6 +119,9 @@ public class BinarySearch {
 
         // sort the array
         Arrays.sort(allowlist);
+
+
+        removeDuplicates(allowlist);
 
         // read integer key from standard input; print if not in allowlist
         while (!StdIn.isEmpty()) {

@@ -5,6 +5,9 @@
 	<artifactId>algs4</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0.0</version>
+	<properties>
+		<maven.compiler.target>16</maven.compiler.target>
+	</properties>
 	<name>algs4</name>
 	<licenses>
 		<license>
@@ -49,7 +52,7 @@
 				</activation>
 			<properties>
 				<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-				<java.version>1.8</java.version>
+				<java.version>16</java.version>
 			</properties>
 			<build>
 				<plugins>
@@ -82,5 +85,12 @@
 		</profile>
 	</profiles>
 	<dependencies>
+		<dependency>
+			<groupId>ldapjdk</groupId>  <!-- 库名称，也可以自定义 -->
+			<artifactId>ldapjdk</artifactId>    <!--库名称，也可以自定义-->
+			<version>1.0</version> <!--版本号-->
+			<scope>system</scope> <!--作用域-->
+			<systemPath>${project.basedir}/libs/stdlib.jar</systemPath>
+		</dependency>
 	</dependencies>  
 </project>
