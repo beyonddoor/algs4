@@ -86,4 +86,5 @@ wrapper {
 
 dependencies {
     implementation files('libs/stdlib.jar')
+    testImplementation('org.junit.jupiter:junit-jupiter-engine:5.9.2')
 }

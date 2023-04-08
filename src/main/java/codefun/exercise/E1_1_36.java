@@ -1,11 +1,9 @@
-package codefun.experiment;
+package codefun.exercise;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 
-import java.util.concurrent.Callable;
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 /**
  * Empirical shuffle check. Run computational experiments to check that our

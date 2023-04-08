@@ -1,4 +1,4 @@
-package codefun.exercise;
+package codefun.demo;
 
 public class Binomial {
 //    public static double binomial(int N, int k, double p){

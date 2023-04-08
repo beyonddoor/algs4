@@ -1,4 +1,4 @@
-package codefun.experiment;
+package codefun.exercise;
 
 import edu.princeton.cs.algs4.StdRandom;
 

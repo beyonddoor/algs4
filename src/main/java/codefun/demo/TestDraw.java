@@ -1,4 +1,4 @@
-package codefun.test;
+package codefun.demo;
 
 import edu.princeton.cs.algs4.BinaryIn;
 import edu.princeton.cs.algs4.StdDraw;
